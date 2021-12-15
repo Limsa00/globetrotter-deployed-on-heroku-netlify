@@ -1,4 +1,4 @@
-export const baseURL = 'https://young-dusk-15793.herokuapp.com/v1';
+export const baseURL = 'https://mycorsproxy-sb.herokuapp.com/https://young-dusk-15793.herokuapp.com/v1';
 // export const baseURL = 'http://localhost:3000/v1';
 // export const baseURL = 'https://globetrotter-973.herokuapp.com/v1';
 export const appId = 'plP2U9KPBVXF'; // Token Algolia Application id
