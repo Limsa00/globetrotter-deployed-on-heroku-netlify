@@ -4,7 +4,7 @@ if (!process.env.NODE_ENV || process.env.NODE_ENV !== 'production') {
 
 const express = require('express');
 const session = require('express-session');
-// const cors = require('cors');
+const cors = require('cors');
 const sanitizeHtml = require('sanitize-html');
 const multer = require('multer');
 const app = express();
@@ -28,13 +28,15 @@ const port = process.env.PORT || 5555;
 
 const router = require('./router');
 
-app.use((req, res, next) => {
-    res.header('Access-Control-Allow-Origin', "http://localhost:8080");
-    res.header('Access-Control-Allow-Credentials', true);
-    res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
-    res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PATCH, DELETE');
-    next();
-});
+// app.use((req, res, next) => {
+//     res.header('Access-Control-Allow-Origin', "http://localhost:8080");
+//     res.header('Access-Control-Allow-Credentials', true);
+//     res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+//     res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PATCH, DELETE');
+//     next();
+// });
+
+app.use(cors());
 
 app.use(express.json());
 app.use(bodyParser.any());
