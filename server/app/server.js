@@ -12,14 +12,6 @@ const bodyParser = multer();
 
 // app.use(cors());
 
-// app.use((req, res, next) => {
-//     res.header('Access-Control-Allow-Origin', "http://localhost:8080");
-//     res.header('Access-Control-Allow-Credentials', true);
-//     res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
-//     res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PATCH, DELETE');
-//     next();
-// });
-
 app.use(session({
     secret: 'keyboard cat',
     resave: true,
@@ -36,6 +28,14 @@ app.use(express.urlencoded({ extended: true }));
 const port = process.env.PORT || 5555;
 
 const router = require('./router');
+
+app.use((req, res, next) => {
+    res.header('Access-Control-Allow-Origin', "http://localhost:8080");
+    res.header('Access-Control-Allow-Credentials', true);
+    res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+    res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PATCH, DELETE');
+    next();
+});
 
 app.use(express.json());
 app.use(bodyParser.any());
