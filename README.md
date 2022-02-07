@@ -1,22 +1,22 @@
 # GlobeTrotter
 
-GlobeTrotter is an app designed to help people and organizations plan their travel. The app is deployed on Heroku for the server and netflify for the client interface. Website link is [here](https://priceless-heisenberg-0c1f50.netlify.app/).
+GlobeTrotter is an app designed to help people and organizations plan their trip. The app is deployed on Heroku for the server and netflify for the client interface. The website link is [here](https://priceless-heisenberg-0c1f50.netlify.app/).
 
 This app has been developed by a team of four people during our fullstack JS training.  
 
-This project has been presented in order to obtain french certificate as a web and web mobile developer (Titre professionnel développeur Web et Web Mobile de niveau 5). My project presentation is available in this [link](https://drive.google.com/file/d/18pH5Zba13CuXeQRS6IdSLRy-O4alGiS1/view?usp=sharing).
+This project has been presented in order to obtain a certificate as a web and web mobile developer (Titre professionnel développeur Web et Web Mobile de niveau 5). My project presentation is available in this [link](https://drive.google.com/file/d/18pH5Zba13CuXeQRS6IdSLRy-O4alGiS1/view?usp=sharing).
 
 ## Main features
 - Authentication process with access to a personal space
 - Email confirmation through sign up process
 - Password recovery process with a new password to define
-- View, create, or delete travels
-- Invite new travelers to our travel and allow reading rights
-- Upload useful documents related to a travel
+- View, create, update or delete a trip
+- Invite new travelers to a trip and allow reading rights
+- Upload useful documents related to a trip
 - Auto-completion using algolia API
 - Map display of different places using leaflet API
-- Adding hotels, transports and activities to our travel
-- Selecting between all the items selected to build final travel itinerary
+- Adding hotels, transports and activities to a trip
+- Selecting between all the items selected to build final trip itinerary
 - Travel budgetting by item (transports, hotels and activities)
 
 ## Technologies
