@@ -8,7 +8,7 @@ This project has been presented in order to obtain a certificate as a web and we
 
 ## Main features
 - Authentication process with access to a personal space
-- Email confirmation through sign up process
+- Email confirmation through sign up process (feature disabled)
 - Password recovery process with a new password to define
 - View, create, update or delete a trip
 - Invite new travelers to a trip and allow reading rights
