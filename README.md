@@ -9,7 +9,7 @@ This project has been presented in order to obtain a certificate as a web and we
 ## Main features
 - Authentication process with access to a personal space
 - Email confirmation through sign up process
-- Password recovery process with a new password to define
+- Password recovery process with a new password to define (disabled)
 - View, create, update or delete a trip
 - Invite new travelers to a trip and allow reading rights
 - Upload useful documents related to a trip
@@ -69,7 +69,7 @@ As the Lead Dev Back of this project I have been in charge of:
 - Implementing the API based on REST architecture
 - SQL migration to build the database
 - Travel Budget Calculation using SQL through views (virtual tables)
-- Implementing REDIS for cache management and loading performance
+- Implementing REDIS for cache management and loading performance (disabled beacause of CORS problem after deployment)
 - Login feature
 - Continuous test of the API and adaptation according to front developers needs
 - Deployment of the project
